@@ -72,7 +72,7 @@ private  function emptyInput(){
 }
 private  function  invalidName(){
     $result=true;
-    if(strlen( $this->name) >=1 && strlen( $this->name) <=3 && preg_match('/[A-Za-z]/',$this->name) ){}
+    if(strlen( $this->name) >=2  && preg_match('/^[a-zA-Z]+$/',$this->name) ){}
     else{
         $response=[
             "status"=>false,

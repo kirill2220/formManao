@@ -43,7 +43,7 @@ require 'auth.php';
 </form>
 </div>
 <?php  else: ?>
-    <p>Привет <?= $_COOKIE['user'] ?>,ты на странице входа<a href="exit.php">Выход</a></p>
+    <p>Hello <?= $_COOKIE['user'] ?>,ты на странице входа<a href="exit.php">Выход</a></p>
 <?php endif; ?>
 <script type="text/javascript">
     document.getElementById( "form" ).style.display = "block";
